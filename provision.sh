@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt-get update && sudo apt-get upgrade
-wget --progress=bar:force https://dl.google.com/go/go1.10.2.linux-amd64.tar.gz
-tar -xzvf go1.10.2.linux-amd64.tar.gz
+wget -q https://dl.google.com/go/go1.10.2.linux-amd64.tar.gz
+tar -xzf go1.10.2.linux-amd64.tar.gz
 rm -r go1.10.2.linux-amd64.tar.gz
 sudo mv go /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin' >> .bash_profile
